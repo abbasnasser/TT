@@ -1,0 +1,147 @@
+html {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  max-width: 400px;
+
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.image {
+  border-radius: 20px;
+  max-width: 300px;
+}
+.nav_bar {
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  color: #00477a;
+  padding-top: 10px;
+  z-index: 3;
+  position: relative;
+}
+.title {
+  color: black;
+  background-color: transparent;
+  border-radius: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  position: absolute;
+  left: 5%;
+  top: 0px;
+  text-align: center;
+
+  width: 160px;
+}
+.menu {
+  position: relative;
+  top: 5px;
+  float: right;
+  margin-right: 5%;
+}
+.menues {
+  position: absolute;
+  background-color: black;
+  /* height: 240px; */
+  width: 200px;
+  top: 70px;
+  right: 5%;
+
+  z-index: 7;
+  border-radius: 20px;
+  margin-top: 10px;
+  animation: animatemenuin 0.5s;
+  border-color: black;
+  text-align: center;
+}
+.menu_items {
+  color: white;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .menues {
+    width: 90%;
+    right: 0px;
+    margin-right: 5%;
+  }
+}
+
+.add_blur_effect_menu {
+  animation: blurer 0.1s;
+  filter: blur(1px);
+}
+
+@keyframes blurer {
+  from {
+    filter: blur(0px);
+  }
+  to {
+    filter: blur(1px);
+  }
+}
+.logo {
+  width: 120px;
+  position: absolute;
+}
+.logo_container {
+  background-color: transparent;
+  width: 95%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  position: absolute;
+  display: none;
+  z-index: 4;
+}
+.btns_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 200px;
+}
+.si {
+  width: 160px;
+  background-color: black;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.su {
+  width: 160px;
+  background-color: black;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  justify-content: center;
+  margin-top: 20px;
+}

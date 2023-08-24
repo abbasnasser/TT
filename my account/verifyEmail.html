@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <style>
+      html {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+
+      .logo {
+        width: 120px;
+        position: absolute;
+      }
+      .logo_container {
+        background-color: transparent;
+        width: 95%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        position: absolute;
+        display: none;
+        z-index: 4;
+      }
+      .trans {
+        margin-top: 100px;
+        background-color: white;
+        height: 240px;
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        position: absolute;
+        border-radius: 20px;
+        left: 50%;
+        top: 40%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        animation: aimIn 1.5s;
+        padding-top: 70px;
+      }
+
+      @keyframes aimIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .code {
+        width: 99%;
+        max-width: 250px;
+        height: 40px;
+        border-color: black;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-left: 15px;
+        border-width: 1px;
+        font-family: "Times New Roman", Times, serif, sans-serif;
+        color: black;
+        font-size: 17px;
+      }
+
+      .login_btn {
+        background-color: black;
+        width: 60%;
+        height: 40px;
+        margin-left: 55px;
+
+        border-radius: 20px;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .error {
+        font-family: "Times New Roman", Times, serif, sans-serif;
+        color: black;
+        font-size: 17px;
+        height: 20px;
+        margin-left: -10px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: transparent;
+        animation: aimIn 1.5s;
+      }
+      .op {
+        display: none;
+        animation: aimIn 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="logo" class="logo_container">
+      <img class="logo" src="../assets/logo.gif" alt="" srcset="" />
+    </div>
+    <div class="trans" id="trans">
+      <p style="padding-left: 15px">
+        A verification code is sent to your email
+      </p>
+      <input
+        type="text"
+        id="code"
+        class="code"
+        placeholder="Verification Code" />
+
+      <div class="error"><p class="op" id="error"></p></div>
+      <div class="login_btn" onclick="verify_code()">Verify</div>
+    </div>
+    <script src="./verifyEmail.js"></script>
+  </body>
+</html>

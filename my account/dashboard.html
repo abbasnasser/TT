@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body id="b">
+    <div id="logo" class="logo_container">
+      <img class="logo" src="../assets/logo.gif" alt="" srcset="" />
+    </div>
+
+    <div class="main" id="main">
+      <div class="columnf"></div>
+      <div class="column2">
+        <div class="row2">
+          <div class="Course">Course Activity</div>
+
+          <div class="enroll_box">
+            <div id="enroll_box" class="enroll">+</div>
+          </div>
+        </div>
+        <div id="add_Course" class="cont2"></div>
+
+        <div class="cards" id="cards"></div>
+      </div>
+      <div><div class="centerline"></div></div>
+
+      <div class="column3">
+        <div class="row3" id="row3">
+          <div id="choose_course_to_view_lessons_desktop" class="lessons">
+            #
+          </div>
+          <div class="search_box">
+            <input
+              id="search"
+              class="search"
+              type="search"
+              placeholder="Search" />
+          </div>
+          <div id="account_btn" class="account">
+            <div class="acnt_press">AN</div>
+          </div>
+        </div>
+        <div class="menu_cont">
+          <div class="user_menu_mobile" id="user_menu_mobile">
+            <a href="../index.html" style="text-decoration: none; width: 90%"
+              ><div id="press" class="user_menu_items" style="color: white">
+                Home
+              </div></a
+            >
+            <a href="./resetPass.html" style="text-decoration: none; width: 90%"
+              ><div id="press" class="user_menu_items" style="color: white">
+                Change Password
+              </div></a
+            >
+            <div id="logout" class="user_menu_items" style="color: white">
+              Logout
+            </div>
+          </div>
+        </div>
+
+        <div class="course_selecter" id="cc">
+          <div id="choose_course_to_view_lessons" class="courseowrd">#</div>
+          <div id="choose_btn" class="CHOOSE_BTN">
+            <img
+              src="../assets/books.png"
+              style="width: 40px"
+              alt=""
+              srcset="" />
+          </div>
+          <div id="add_enroll" class="add_btn">
+            <img style="width: 50px" src="../assets/add.png" alt="" srcset="" />
+          </div>
+        </div>
+        <div id="course_selecter_item" class="course_selecter_item">
+          <div id="course_selection_box" class="course_selection_box">
+            <div class="cards" id="cards"></div>
+          </div>
+          <div id="enrollment_box" class="enrollment_box"></div>
+        </div>
+        <div id="lessons_card_mobile" class="lessons_card_mobile"></div>
+
+        <div class="lessons_cards" id="lesson_card">
+          <div style="padding-top: 1vh"></div>
+          <div class="lessons_container" id="lessons_container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="logout">logout</div> -->
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
