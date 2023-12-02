@@ -44,7 +44,7 @@ body {
 .menues {
   position: absolute;
   background-color: black;
-  height: 240px;
+  height: auto;
   width: 200px;
   top: 70px;
   right: 5%;
